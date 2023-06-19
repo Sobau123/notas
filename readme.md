@@ -162,4 +162,5 @@ Vai no Github,
 Testar conexão
 ````
 ssh -T git@github.com
-em seguida digite "yes"
+em seguida perguntara se você quer autoriza colocar a chave no Github
+se você quiser digite "yes" se não digite "no".
