@@ -129,3 +129,33 @@ O arquivo será removido apenas da Staging Area - mas não alterará suas modifi
 ````
 git restore --staged bug-123
 ````
+# Criar sua chave no Github
+
+Verificar se existe chave 
+````
+ssh.ls -al ~/.ssh
+````
+Criar uma nova chave. (ID)
+````
+ssh-keygen -t ed25519 -C "your_email@example.com"
+````
+Inicializar agente-ssh.
+````
+eval "$(ssh-agent -s)"
+`````
+Adicionar chave ssh ao agente.
+````
+ssh-add ~/.ssh/id_ed25519
+````
+Copiar chave ssh.
+````
+clip < ~/.ssh/id_ed25519.pub
+````
+Adicionar chave no github
+````
+Vai no Github, procure Settings, depois SSH and GPG keys, agora New SSH key, coloque um titulo adequado ao branch e aperte Ctrl+V no ssh e crie o ssh.
+````
+Testar conexão
+````
+ssh -T git@github.com
+em seguida digite "yes"
