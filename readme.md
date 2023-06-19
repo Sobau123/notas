@@ -153,7 +153,11 @@ clip < ~/.ssh/id_ed25519.pub
 ````
 Adicionar chave no github
 ````
-Vai no Github, procure Settings, depois SSH and GPG keys, agora New SSH key, coloque um titulo adequado ao branch e aperte Ctrl+V no ssh e crie o ssh.
+Vai no Github,
+ procure Settings,
+ depois SSH and GPG keys, agora New SSH key,
+ coloque um titulo adequado ao branch
+ e aperte Ctrl+V no ssh e crie o ssh.
 ````
 Testar conexão
 ````
